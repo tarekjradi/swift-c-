@@ -14,6 +14,8 @@
 		A163E2902C93465900CEB34B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163E28F2C93465900CEB34B /* Assets.xcassets */; };
 		A163E2932C93465900CEB34B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A163E2912C93465900CEB34B /* LaunchScreen.storyboard */; };
 		A163E2962C93465900CEB34B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A163E2952C93465900CEB34B /* main.m */; };
+		A163E29E2C93476600CEB34B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163E29D2C93476600CEB34B /* SwiftUIView.swift */; };
+		A163E2A12C9347DD00CEB34B /* Operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A163E29F2C9347DD00CEB34B /* Operators.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		A163E2922C93465900CEB34B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A163E2942C93465900CEB34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A163E2952C93465900CEB34B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A163E29C2C93476600CEB34B /* swift-cpp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-cpp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A163E29D2C93476600CEB34B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A163E29F2C9347DD00CEB34B /* Operators.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Operators.cpp; sourceTree = "<group>"; };
+		A163E2A02C9347DD00CEB34B /* Operators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Operators.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,10 @@
 		A163E2822C93465400CEB34B /* swift-cpp */ = {
 			isa = PBXGroup;
 			children = (
+				A163E29F2C9347DD00CEB34B /* Operators.cpp */,
+				A163E2A02C9347DD00CEB34B /* Operators.hpp */,
 				A163E2832C93465400CEB34B /* AppDelegate.h */,
+				A163E29D2C93476600CEB34B /* SwiftUIView.swift */,
 				A163E2842C93465400CEB34B /* AppDelegate.m */,
 				A163E2862C93465400CEB34B /* SceneDelegate.h */,
 				A163E2872C93465400CEB34B /* SceneDelegate.m */,
@@ -72,6 +81,7 @@
 				A163E2912C93465900CEB34B /* LaunchScreen.storyboard */,
 				A163E2942C93465900CEB34B /* Info.plist */,
 				A163E2952C93465900CEB34B /* main.m */,
+				A163E29C2C93476600CEB34B /* swift-cpp-Bridging-Header.h */,
 			);
 			path = "swift-cpp";
 			sourceTree = "<group>";
@@ -107,6 +117,7 @@
 				TargetAttributes = {
 					A163E27F2C93465400CEB34B = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -149,7 +160,9 @@
 				A163E28B2C93465400CEB34B /* ViewController.m in Sources */,
 				A163E2852C93465400CEB34B /* AppDelegate.m in Sources */,
 				A163E2962C93465900CEB34B /* main.m in Sources */,
+				A163E2A12C9347DD00CEB34B /* Operators.cpp in Sources */,
 				A163E2882C93465400CEB34B /* SceneDelegate.m in Sources */,
+				A163E29E2C93476600CEB34B /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,6 +323,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xpto.swift-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/swift-cpp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -318,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,6 +353,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xpto.swift-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/swift-cpp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
