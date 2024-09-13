@@ -16,6 +16,7 @@
 		A163E2962C93465900CEB34B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A163E2952C93465900CEB34B /* main.m */; };
 		A163E29E2C93476600CEB34B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163E29D2C93476600CEB34B /* SwiftUIView.swift */; };
 		A163E2A12C9347DD00CEB34B /* Operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A163E29F2C9347DD00CEB34B /* Operators.cpp */; };
+		A163E2A32C93517D00CEB34B /* CppBridging.mm in Sources */ = {isa = PBXBuildFile; fileRef = A163E2A22C93517D00CEB34B /* CppBridging.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +32,12 @@
 		A163E2922C93465900CEB34B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A163E2942C93465900CEB34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A163E2952C93465900CEB34B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A163E29C2C93476600CEB34B /* swift-cpp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-cpp-Bridging-Header.h"; sourceTree = "<group>"; };
 		A163E29D2C93476600CEB34B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		A163E29F2C9347DD00CEB34B /* Operators.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Operators.cpp; sourceTree = "<group>"; };
 		A163E2A02C9347DD00CEB34B /* Operators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Operators.hpp; sourceTree = "<group>"; };
+		A163E2A22C93517D00CEB34B /* CppBridging.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppBridging.mm; sourceTree = "<group>"; };
+		A163E2A42C9351D000CEB34B /* CppBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppBridging.h; sourceTree = "<group>"; };
+		A163E2A82C93620800CEB34B /* ObjcBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcBridging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +70,10 @@
 		A163E2822C93465400CEB34B /* swift-cpp */ = {
 			isa = PBXGroup;
 			children = (
-				A163E29F2C9347DD00CEB34B /* Operators.cpp */,
-				A163E2A02C9347DD00CEB34B /* Operators.hpp */,
+				A163E2A72C93543E00CEB34B /* swift */,
+				A163E2A62C93541500CEB34B /* bridgingHeaders */,
+				A163E2A52C93540A00CEB34B /* cpp */,
 				A163E2832C93465400CEB34B /* AppDelegate.h */,
-				A163E29D2C93476600CEB34B /* SwiftUIView.swift */,
 				A163E2842C93465400CEB34B /* AppDelegate.m */,
 				A163E2862C93465400CEB34B /* SceneDelegate.h */,
 				A163E2872C93465400CEB34B /* SceneDelegate.m */,
@@ -81,9 +84,35 @@
 				A163E2912C93465900CEB34B /* LaunchScreen.storyboard */,
 				A163E2942C93465900CEB34B /* Info.plist */,
 				A163E2952C93465900CEB34B /* main.m */,
-				A163E29C2C93476600CEB34B /* swift-cpp-Bridging-Header.h */,
 			);
 			path = "swift-cpp";
+			sourceTree = "<group>";
+		};
+		A163E2A52C93540A00CEB34B /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				A163E29F2C9347DD00CEB34B /* Operators.cpp */,
+				A163E2A02C9347DD00CEB34B /* Operators.hpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		A163E2A62C93541500CEB34B /* bridgingHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				A163E2A42C9351D000CEB34B /* CppBridging.h */,
+				A163E2A22C93517D00CEB34B /* CppBridging.mm */,
+				A163E2A82C93620800CEB34B /* ObjcBridging.h */,
+			);
+			path = bridgingHeaders;
+			sourceTree = "<group>";
+		};
+		A163E2A72C93543E00CEB34B /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				A163E29D2C93476600CEB34B /* SwiftUIView.swift */,
+			);
+			path = swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +189,7 @@
 				A163E28B2C93465400CEB34B /* ViewController.m in Sources */,
 				A163E2852C93465400CEB34B /* AppDelegate.m in Sources */,
 				A163E2962C93465900CEB34B /* main.m in Sources */,
+				A163E2A32C93517D00CEB34B /* CppBridging.mm in Sources */,
 				A163E2A12C9347DD00CEB34B /* Operators.cpp in Sources */,
 				A163E2882C93465400CEB34B /* SceneDelegate.m in Sources */,
 				A163E29E2C93476600CEB34B /* SwiftUIView.swift in Sources */,
@@ -323,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xpto.swift-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/swift-cpp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/bridgingHeaders/CppBridging.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xpto.swift-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/swift-cpp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-cpp/bridgingHeaders/CppBridging.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

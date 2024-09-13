@@ -6,3 +6,8 @@
 //
 
 #include "Operators.hpp"
+
+
+double Operators::add(double a, double b) { 
+    return a + b;
+}

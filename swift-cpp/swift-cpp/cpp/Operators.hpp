@@ -10,4 +10,9 @@
 
 #include <stdio.h>
 
-#endif /* Operators_hpp */
+class Operators {
+public:
+    static double add(double a, double b);
+};
+
+#endif
